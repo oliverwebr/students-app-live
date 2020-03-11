@@ -10,6 +10,7 @@ const app = express();
 const studentRoutes = require("./routes/students");
 
 app.use(express.json());
+// apply loggin middleware to api routes
 app.use("/api", logger);
 app.use("/api/students", studentRoutes);
 
